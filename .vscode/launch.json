@@ -1,0 +1,80 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "writeObject",
+            "request": "launch",
+            "mainClass": "writeObject",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "FileTest1",
+            "request": "launch",
+            "mainClass": "project.FileTest1",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "FileTest",
+            "request": "launch",
+            "mainClass": "project.FileTest",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "MyFile",
+            "request": "launch",
+            "mainClass": "project.lesson1.MyFile",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "MyCollection",
+            "request": "launch",
+            "mainClass": "work7.MyCollection",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "MyFrame",
+            "request": "launch",
+            "mainClass": "MyFrame",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "type": "java",
+            "name": "Example7_1",
+            "request": "launch",
+            "mainClass": "work7.Example7_1",
+            "projectName": "datastructure_7fd26313"
+        },
+        {
+            "name": "gdb.exe - 建立和调试活动文件",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${fileDirname}\\${fileBasenameNoExtension}.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: gcc.exe 生成活动文件",
+            "miDebuggerPath": "D:/mingw64/bin/gdb.exe"
+        }
+    ]
+}

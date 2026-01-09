@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Win32",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [
+                "_DEBUG",
+                "UNICODE",
+                "_UNICODE"
+            ],
+            // 关键：指定你的 MinGW 编译器路径
+            "compilerPath": "D:/mingw64/bin/gcc.exe", // 这里使用 gcc.exe 作为C语言编译器
+            "cStandard": "c17", // 或者你喜欢的标准，如 c11
+            "cppStandard": "c++17", // C++标准，即使你只写C也要配置好
+            "intelliSenseMode": "windows-gcc-x64" // 告诉IntelliSense使用GCC的模式
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,29 @@
+{
+    "tasks": [
+        {
+            "type": "cppbuild",
+            "label": "C/C++: gcc.exe 生成活动文件", // 任务名称，会在命令面板中显示
+            "command": "D:/mingw64/bin/gcc.exe", // 编译命令
+            "args": [
+                "-g", // 生成调试信息，必不可少
+                "${file}", // 当前打开并激活的文件
+                "-o", // 输出文件
+                "${fileDirname}\\${fileBasenameNoExtension}.exe", // 输出路径和文件名，例如 ./main.exe
+                "-Wall", // 开启所有警告
+                "-Wextra", // 开启额外警告
+                "-std=c17" // 指定C语言标准
+            ],
+            "options": {
+                "cwd": "D:/mingw64/bin" // 执行命令的工作目录
+            },
+            "problemMatcher": [
+                "$gcc" // 使用GCC的问题匹配器来解析编译错误和警告
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true // 设为默认构建任务
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
