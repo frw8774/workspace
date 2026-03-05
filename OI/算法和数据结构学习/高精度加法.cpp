@@ -4,6 +4,7 @@ string a, b;
 int arr_a[100000];
 int arr_b[100000];
 int res[100000];
+//高精度加法本质上就是用数组和字符串模拟大数加法的竖式计算
 string add_plus(string a, string b) {
     string result;
     int len_a = a.length();
@@ -22,6 +23,7 @@ string add_plus(string a, string b) {
             res[i + 1]++;
         }
     }
+    //处理最高位不为零
     if(res[len]) {
         len++;
     }
