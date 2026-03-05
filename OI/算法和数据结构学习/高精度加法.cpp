@@ -37,7 +37,7 @@ void solve() {
     memset(arr_b, 0, sizeof(arr_b));
     memset(res, 0, sizeof(res));
     cin >> a >> b;
-    cout << add_plus(a, b);
+    cout << add_plus(a, b) << endl;
 }
 int main() {
     solve();
