@@ -5,6 +5,7 @@ int arr_a[100000];
 int arr_b[100000];
 int res[100000];
 int len_a, len_b, len;
+//比较两数大小
 bool compare(int arr_a[], int arr_b[]) {
     if(len_a != len_b) {
         return len_a > len_b;
@@ -16,6 +17,7 @@ bool compare(int arr_a[], int arr_b[]) {
     }
     return true;
 }
+//模拟两数相减
 string sub_plus(int arr_a[], int arr_b[]) {
     string result;
     for(int i = 0; i < len; i++) {
@@ -25,6 +27,7 @@ string sub_plus(int arr_a[], int arr_b[]) {
         }
         res[i] = arr_a[i] - arr_b[i];
     }
+    //处理前导0
     while(len && res[len] == 0) {
         len--;
     }
