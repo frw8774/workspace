@@ -22,7 +22,7 @@ void result(int i, int j, char* x, char* y, int** len) {
 void dp(char *X, char *Y) {
     int** len = (int**)malloc(sizeof(int*) * (M + 1));
     for(int i = 0; i <= M; i++) {
-        len[i] = (int*)malloc(sizeof(int) * N);
+        len[i] = (int*)malloc(sizeof(int) * (N + 1));
     }
     for(int i = 0; i <= M; i++) {
         len[i][0] = 0;
